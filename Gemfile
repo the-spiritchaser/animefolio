@@ -68,3 +68,6 @@ gem 'jquery-rails'
 gem 'sprockets-rails'
 
 gem 'devise'
+
+gem 'carrierwave'
+gem 'mini_magick'
