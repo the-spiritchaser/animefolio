@@ -1,0 +1,17 @@
+.jumbotron {
+  background-image: url("/assets/jumbo_sea.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+.photos{
+  border-radius: 5px;
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.stretched-link{
+  text-decoration: none;
+}
