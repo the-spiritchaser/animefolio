@@ -1,12 +1,10 @@
 class UsersController < ApplicationController
   
   def show
-
-  end
-  
-  def edit
+    @posts = Post.includes(:user).order("created_at DESC")
   end
 
-  def update
+  def user_params
+    params.require(:user).permit(:name)
   end
 end
