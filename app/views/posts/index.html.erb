@@ -1,10 +1,14 @@
 <div class = "container-fulied">
-  <div class = "container">
-    <div class = "main-title">
+  
+    <div class = "row main-title ">
       <h1 class="text-monospace">Portfolio</h1>
     </div>
-  </div>
+
   <div class = "container-fulied">
-    <%= render "main_contents" %>
+    <div class="row row-cols-4">
+      
+        <%= render @posts %>
+      
+    </div>
   </div>
 </div>
