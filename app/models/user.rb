@@ -7,4 +7,10 @@ class User < ApplicationRecord
   has_many :posts
   
   validates :name, presence: true, uniqueness: true
+
+  def show_last_post
+    if (last_post = posts.last).present?
+      last_post.image
+    end
+  end
 end
