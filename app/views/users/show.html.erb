@@ -1,0 +1,20 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">User's Portfolio</h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 prof__left">
+      <%= @name %>
+    </div>
+    <div class="col-md-8 prof__right pl-5">
+      <div class="row row-cols-2">
+        
+        <%= render @posts %>
+        
+      </div>
+    </div>
+  </div>
+</div>

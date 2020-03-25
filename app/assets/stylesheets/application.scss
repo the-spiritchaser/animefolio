@@ -1,4 +1,7 @@
 @import "bootstrap";
-@import "index/header";
-@import "index/index";
-@import "index/main_content"
+@import "posts/index/header";
+@import "posts/index/index";
+@import "posts/index/main_content";
+@import "posts/post";
+
+@import "users/show/show";
