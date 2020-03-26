@@ -1,13 +1,11 @@
 <div class="col py-3">
   <figure class="figure position-relative">
-    <img class = "photos img-fluid" src="<%= post.image %>" alt="">
+    <a href="<%= post.image %>" data-lightbox="<%= post.image %>" >
+      <img class = "photos img-fluid" src="<%= post.image %>" alt="">
+    </a>
     <figcaption class="figure-caption pb-2">
-      <%= link_to "#{post.title}", post_path(post.image), class: "stretched-link thumb-caption" %>
+      <p class="thumb-caption"> <%= post.title %> </p>
     </figcaption>
   </figure>
 </div>
 
-
-
-
-<%# post.user.name/user_path(post.user.id) %>
