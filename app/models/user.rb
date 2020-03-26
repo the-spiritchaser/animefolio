@@ -8,6 +8,9 @@ class User < ApplicationRecord
   
   validates :name, presence: true, uniqueness: true
 
+  include Gravtastic
+  gravtastic
+
   def show_last_post
     if (last_post = posts.last).present?
       last_post.image
