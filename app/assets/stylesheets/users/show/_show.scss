@@ -12,6 +12,22 @@
   object-fit: cover;
 }
 
-.stretched-link{
+a.thumb-caption{
   text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  word-break: break-all;
 }
+
+.prof__left{
+  border: lightgray 1px solid;
+  height: auto;
+  &__avatar{
+    border-radius: 50%;
+  }
+  &__user-name{
+    font-size: 25px;
+    text-align: center;
+  }
+}
+

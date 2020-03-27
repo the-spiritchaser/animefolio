@@ -1,8 +1,10 @@
-<div class="col py-3">
-  <figure class="figure shadow-sm position-relative">
-    <img class = "photos img-fluid" src="<%= user.show_last_post %>" alt="">
-    <figcaption class="figure-caption pb-3 font-weight-bold">
-      <%= link_to "#{user.name}", user_path(user.id), class: "stretched-link thumb-caption" %>
-    </figcaption>
-  </figure>
-</div>
+<% if user.posts.present? %>
+  <div class="col py-3">
+    <figure class="figure position-relative">
+      <img class = "photos img-fluid" src="<%= user.show_last_post %>" alt="">
+      <figcaption class="figure-caption pb-2">
+        <%= link_to "#{user.name}", user_path(user.id), class: "stretched-link thumb-caption" %>
+      </figcaption>
+    </figure>
+  </div>
+<% end %>

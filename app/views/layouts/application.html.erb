@@ -7,12 +7,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+    <%# lightbox2のCDN %>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+
+
   </head>
 
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <%= link_to "AnimeFolio", root_path, class: "navbar-brand text-dark" %>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom">
+        <%= link_to "AnimeFolio", root_path, class: "navbar-brand text-white" %>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,7 +30,7 @@
           <% if user_signed_in? %>
             <div class="dropdown">
               <a class="btn btn-transparent dropdown-toggle py-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img class="rounded-circle border border-secondary" src="/assets/junko.jpg" alt="Generic placeholder image" width="40" height="40">
+                <img class="rounded-circle border border-secondary" src="<%= current_user.gravatar_url %>%" alt="Generic placeholder image" width="40" height="40">
               </a>
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -46,5 +52,10 @@
     <div class = "container-fulied">
       <%= yield %>
     </div>
+
+    <%# lightbox2のCDN %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    
   </body>
 </html>

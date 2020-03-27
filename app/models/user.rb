@@ -8,6 +8,10 @@ class User < ApplicationRecord
   
   validates :name, presence: true, uniqueness: true
 
+  include Gravtastic
+  gravtastic :size => 100,
+             :default => "robohash"
+
   def show_last_post
     if (last_post = posts.last).present?
       last_post.image

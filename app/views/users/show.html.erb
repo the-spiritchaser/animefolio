@@ -1,19 +1,34 @@
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">User's Portfolio</h1>
+    <h1 class="display-4"><%= @name %>'s Portfolio</h1>
   </div>
 </div>
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-4 prof__left">
-      <%= @name %>
+    <div class="col-md-4 ">
+      <div class="prof__left shadow">
+        <div class="row my-4">
+          <div class="col d-flex justify-content-center">
+            <%= image_tag @user.gravatar_url, class: "prof__left__avatar" %>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="prof__left__user-name">
+              <%= @name %>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-md-8 prof__right pl-5">
-      <div class="row row-cols-2">
-        
-        <%= render @posts %>
-        
+      <div class="row row-cols-1 row-cols-md-2">
+        <% if @user.posts.present? %>
+          <%= render @posts %>
+        <% else %>
+          <p class="postsnone-info">投稿はまだありません。</p>
+        <% end %>
       </div>
     </div>
   </div>
