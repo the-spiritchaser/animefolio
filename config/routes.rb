@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'users#index'
   resources :users, only: [:index, :show, :edit, :update]
   resources :posts, only: [:index, :new, :create]
+  resources :rooms, only: [:new, :create]
 end
