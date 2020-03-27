@@ -30,7 +30,7 @@
           <% if user_signed_in? %>
             <div class="dropdown">
               <a class="btn btn-transparent dropdown-toggle py-0" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img class="rounded-circle border border-secondary" src="/assets/junko.jpg" alt="Generic placeholder image" width="40" height="40">
+                <img class="rounded-circle border border-secondary" src="<%= current_user.gravatar_url %>%" alt="Generic placeholder image" width="40" height="40">
               </a>
 
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
