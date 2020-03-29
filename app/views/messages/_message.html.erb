@@ -1,0 +1,27 @@
+<% if message.user.name == current_user.name %>
+  <div class="row mb-2 justify-content-end">
+    <div class="px-5 border my-balloon text-break">
+      <p class="user-name">
+        <%= current_user.name %>
+      </p>
+        <%= simple_format message.content %>
+    </div>
+    <div>
+      <%=image_tag message.user.gravatar_url, class: "message-avatar" %>
+    </div>
+  </div>
+<% else %>
+  <div class="row mb-2">
+    <div>
+      <%=image_tag message.user.gravatar_url, class: "message-avatar" %>
+    </div>
+    <div class="px-5 border balloon text-break">
+      <div>
+        <p class="user-name">
+          <%= message.user.name %>
+        </p>
+          <%= simple_format message.content %>
+      </div>
+    </div>
+  </div>
+<% end %>
