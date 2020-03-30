@@ -13,7 +13,7 @@ class User < ApplicationRecord
 
   include Gravtastic
   gravtastic :size => 100,
-             :default => "mm"
+             :default => "retro"
 
   def show_last_post
     if (last_post = posts.last).present?
