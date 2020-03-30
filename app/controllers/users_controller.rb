@@ -8,6 +8,8 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @name = @user.name
     @posts = @user.posts.includes(:user).order("created_at DESC")
+    @rooms = @user.rooms
+    @room = @rooms & current_user.rooms
   end
 
 end

@@ -5,12 +5,15 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :posts
-  
+  has_many :room_users
+  has_many :rooms, through: :room_users
+  has_many :messages
+
   validates :name, presence: true, uniqueness: true
 
   include Gravtastic
   gravtastic :size => 100,
-             :default => "robohash"
+             :default => "retro"
 
   def show_last_post
     if (last_post = posts.last).present?

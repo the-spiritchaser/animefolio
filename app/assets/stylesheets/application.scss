@@ -1,7 +1,12 @@
 @import "bootstrap";
+
 @import "posts/index/header";
 @import "posts/index/index";
 @import "posts/index/main_content";
 @import "posts/post";
 
-@import "users/show/show";
+@import "users/show";
+
+@import "rooms/show";
+
+@import "messages/message";

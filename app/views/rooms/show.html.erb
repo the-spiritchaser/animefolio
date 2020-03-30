@@ -1,0 +1,36 @@
+<div class="container">
+  <div class = "row main-title ">
+    <h1 class="text-monospace">Message</h1>
+  </div>
+  <div class="row message">
+    <div class="col-md-4  message__left">
+      <div class="row mb-4">
+        <% @room.users.each do |user|%>
+          <% if user.name != current_user.name %>
+            <%= link_to "＜ #{user.name}", user_path(user.id), class: "room_user" %>
+          <% end %>
+        <% end %>
+      </div>
+      
+        <%= form_with model:[@room, @message], local: true, class: "row my-2" do |f| %>
+          <%= f.text_area :content, class: "form-control mb-3",rows: "4", placeholder: "メッセージを送信" %>
+          <%= f.submit "Send", class: "btn btn-primary btn-lg btn-block" %>
+        <% end %>
+      
+    </div>
+    <div class="col-md-8 message__right">
+      <% if @messages.present? %>
+        <%= render @messages %>
+      <% else %>
+        <p class="no-message">
+          まだメッセージはありません
+        </p>
+      <% end %>
+    </div>
+  </div>
+  <div class="footer fixed-bottom bg-light">
+    
+  </div>
+</div>
+
+
