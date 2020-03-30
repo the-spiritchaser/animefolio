@@ -40,7 +40,8 @@
           </div>
         </div>
         <div class="row p-4 profile-field">
-          <%= simple_format @user.profile %>
+          
+          <%= simple_format text_url_to_link(h(@user.profile)).html_safe %>
         </div>
       </div>
 
