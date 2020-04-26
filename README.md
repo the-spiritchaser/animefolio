@@ -1,24 +1,40 @@
-# README
+# Animefolio: An animator's portfolio SNS
+  
+Animefolioはアニメーターの方のためのポートフォリオSNSです。  
+  
+  
+## App URL
+  
+### **http://18.178.185.8/**
+  
+## Description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+主に以下の機能が使用できます。  
 
-Things you may want to cover:
+* ポートフォリオ(画像)の投稿
+* ユーザ登録
+* マイページ
+* プロフィールの登録
+* ダイレクトメッセージ  
 
-* Ruby version
+(※アニメーターのポートフォリオとは、人物のポージング集や動物画、静物画のことで、画力・デッサン力をアピールするための作品集です)
 
-* System dependencies
+## Features
 
-* Configuration
+**制作背景**  
+このWEBアプリケーションは、私のアニメーション制作の経験から、アニメーターの方の働く環境を応援したいという思いで作りました。  
 
-* Database creation
+**解決したい課題**  
+現在アニメーターの方の多くはフリーランスで、単価で仕事を受注しています。  
+しかし案件獲得のほとんどがコネクションによるもので、自分から新規開拓する方法があまりありません。  
+アニメーターを志す若手の方にとっても、制作会社に自分をアピールする手段が少なく、才能が埋もれてしまうかもしれないと感じていました。  
+また制作会社としても、埋もれた才能を発掘して育てたいという意欲があっても、探す方法が限られてしまう状況でした。
 
-* Database initialization
+**こんなサービス**  
+そこでアニメーターの方と制作会社がつながれるようなサービスを作りたいと思い、ポートフォリオSNSというコンセプトで開発をしました。  
+このアプリケーションでは、アニメーターの方が自分のポートフォリオを投稿し、他のユーザーはそれを閲覧することができます。  
+またユーザーマイページではプロフィールを設定することができ、仕事歴や参加作品を記載することもできます。  
+ダイレクトメッセージ機能を利用して、企業がアニメーターの方に直接連絡をとったり、アニメーター同士で交流もできます。  
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
