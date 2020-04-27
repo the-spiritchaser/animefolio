@@ -1,3 +1,6 @@
+<img width="1401" alt="スクリーンショット 2020-04-27 16 11 18" src="https://user-images.githubusercontent.com/60535949/80344214-2a101d00-88a2-11ea-9ba4-ce751551b0f9.png">
+
+
 # Animefolio: An animator's portfolio SNS
   
 Animefolioはアニメーターの方のためのポートフォリオSNSです。  
@@ -5,8 +8,16 @@ Animefolioはアニメーターの方のためのポートフォリオSNSです�
   
 ## App URL
   
-### **http://18.178.185.8/**
-  
+### **http://18.178.185.8/**  
+　  
+**Basic認証**  
+ID:animefolio  
+pass:8765  
+　  
+**テスト用アカウント**  
+mail:contributor@mail.com  
+pass:1234qwer  
+
 ## Description
 
 主に以下の機能が使用できます。  
@@ -35,6 +46,40 @@ Animefolioはアニメーターの方のためのポートフォリオSNSです�
 このアプリケーションでは、アニメーターの方が自分のポートフォリオを投稿し、他のユーザーはそれを閲覧することができます。  
 またユーザーマイページではプロフィールを設定することができ、仕事歴や参加作品を記載することもできます。  
 ダイレクトメッセージ機能を利用して、企業がアニメーターの方に直接連絡をとったり、アニメーター同士で交流もできます。  
+
+
+## Commitment
+**こだわったポイント**  
+* プロフィールに記述したURLはハイパーリンクになる
+* DMのルームには該当ユーザ以外は入れない
+
+
+## Task
+**追加したい機能など**  
+* 異常系動作対策
+* テストコード作成(RSpec)
+* ユーザー検索機能
+
+
+## Development Environment
+
+* Ruby
+* Ruby on Rails
+* HTML&CSS
+* bootstrap
+* AWS(EC2, S3)
+* VSCode(Visual Studio Code)
+
+
+## DB
+<img width="1145" alt="スクリーンショット 2020-04-27 17 41 37" src="https://user-images.githubusercontent.com/60535949/80352146-66e21100-88ae-11ea-8834-8cd6db39f3cf.png">
+
+
+　  
+   
+
+**最後までご覧いただきありがとうございます。**
+
 
 
 
